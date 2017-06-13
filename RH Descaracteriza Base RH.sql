@@ -1,0 +1,38 @@
+select * from contratados
+update contratados
+Set CON_DssNome = 'Marisa',
+CON_DssNomePai  = 'Jose',
+CON_DssNomeMae = 'Maria',
+CON_DssEnderecoBase = 'Rua James Holland',
+CON_DssEnderecoNumero = '422',
+CON_DssBairro = 'Barra Funda',
+CON_NusCep = '01138-000',
+CON_CosNumeroRg  = '30124523-X',
+CON_DtdEmissaoRg = '20040830',
+CON_CosReservista = '2145638',
+CON_NusCICNumero = '203.953.627-25',
+CON_DtdNascimentoData = '19800830',
+CON_NusNumeroPis = '254891215',
+CON_DssNomeCompleto = 'Marisa da Silva GoldFarb',
+CON_CosEMailPessoal = 'Marisa.GoldFarb@marisa.com.br',
+CON_NusNumeroCarProf = '45782',
+CON_NusSerieCarProf = '123',
+CON_DtdEmissaoCarProf = '20120830',
+CON_InnVariacaoSalarial = '098',
+CON_VlnSalario = '600',
+CON_CosPagamentoContaDigito = '7',
+CON_CdiMeioPagamento = '341',
+CON_VlnFGTSSaldoAtual = '600',
+CON_DssNomeLastFather = 'Silva',
+CON_DssNomeMidle  = 'Jose',
+CON_DssNomeFirst = 'Marisa',
+CON_DssApelido  = 'Silva',
+CON_DssMunicipio = 'Sao Paulo',
+CON_DssNascimentoLocal  = 'Maranguape',
+CON_CosContaFGTS  = '53000',
+CON_CosPagamentoConta  = '0097811',
+CON_VlnRemuneracao  = '500',
+CON_NusTelefoneNumero_Resid = '1121096000'
+
+
+

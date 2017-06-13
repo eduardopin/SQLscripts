@@ -1,0 +1,5 @@
+quando o DTC falhar....
+Se o MSDTC não subir tente esse comando.
+
+
+msdtc -resetlog

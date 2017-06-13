@@ -1,0 +1,26 @@
+
+
+
+D:\Program Files\Microsoft SQL Server\100\DTS\Binn  -- caminho no mari101
+
+
+"D:\Program Files\Microsoft SQL Server\100\DTS\Binn\DTEXEC.EXE" /SQL "DWH/pkg_dwh_carga_fornecedores" /SERVER MARI101 /CHECKPOINTING OFF /REPORTING E /DECRYPT "ibieta"
+
+
+D:\Program Files\Microsoft SQL Server\100\DTS\Binn  -- caminho no mari101
+
+"E:\Program Files\Microsoft SQL Server\100\DTS\Binn\DTEXEC.EXE" /SQL "DWH/pkg_dwh_carga_fornecedores" /SERVER MARI101 /CHECKPOINTING OFF /REPORTING E /DECRYPT "ibieta"
+
+
+
+-- Biztalk
+
+"D:\MSSQL (x86)\90\DTS\Binn\DTEXEC.EXE" /SQL "EAI/PKG_Carrega_NL_VDA" /SERVER Clusqlbiz /CHECKPOINTING OFF /REPORTING E /DECRYPT "Ssiseai
+
+
+
+   Description: SSIS Error Code DTS_E_OLEDB_EXCEL_NOT_SUPPORTED: The Excel Connection Manager is not supported in the 64-bit version of SSIS, as no OLE DB provider is available.
+
+
+
+"D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\DTEXEC.EXE" /SQL "DWH/pkg_dwh_carga_fornecedores" /SERVER MARI101 /CHECKPOINTING OFF /REPORTING E /DECRYPT "ibieta"

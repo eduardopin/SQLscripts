@@ -1,0 +1,5 @@
+start /wait <DVD Drive>\setup.exe /qn INSTANCENAME=MSSQLSERVER REINSTALL=SQL_Engine REBUILDDATABASE=1 SAPWD=<NewStrongPassword> SQLCOLLATION=<NewSystemCollation>
+
+
+Abra um prompt de comando e navegue até o diretório de instalação do SQL Server. 
+Localize o arquivo sqlservr.exe e execute sqlservr -m -T4022 -T3659 -q"novo_collate".

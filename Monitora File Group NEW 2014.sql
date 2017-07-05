@@ -1,4 +1,8 @@
+-- Funciona somente nos SQL Servers 2012 em diante.
 -- select * from msdb.dbo.sysmail_profile
+-- databasemail config Locaweb 
+-- Servername:  flash.email.locaweb.com.br P 25 Reply --  ipi-w08dsql-03@lwo.locaweb.com.br (corrigir) -- Profile: LWO
+-- Reply operacaoedn3 
 
 Set nocount on
 Create table ##fg_monitor 
@@ -39,9 +43,9 @@ IF EXISTS (select 1 from ##fg_monitor
    where Porcentagem < '0.05')
    EXEC msdb..sp_send_dbmail 	@profile_name = 'SQLMAR',
    					@recipients = 'Eduardo.pin@marisa.com.br',
-					@body = 'SQLMAR,  ESPAÇO LIVRE MENOR QUE 5% NOS BANCOS DE DADOS ABAIXO',
+					@body = 'SQLMAR,  ESPAÃ‡O LIVRE MENOR QUE 5% NOS BANCOS DE DADOS ABAIXO',
 					@query = 'SET NOCOUNT ON 
 				    select Servername, DBNAME, LIVRE_MB, cast(Porcentagem * 100 as varchar(20)) +  ''  % '' as [% Livre] from ##fg_monitor where Porcentagem < ''0.05''',
-					@subject = 'SQLMAR, ESPAÇO INSUFICIENTE NOS BANCOS DE DADOS, ESPAÇO LIVRE < QUE 5%  ***'
+					@subject = 'SQLMAR, ESPAÃ‡O INSUFICIENTE NOS BANCOS DE DADOS, ESPAÃ‡O LIVRE < QUE 5%  ***'
 drop table ##fg_monitor
 
